@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student List</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>Student List</h1>
+    
+    <ul><%
+        var list = '';
+        for (i = 0; i < studentlist.length; i++){
+         list += '<li><a href="mailto:' + studentlist[i].email + '">'+
+             studentlist[i].username + '</a></li>';
+             }
+        %>
+        <%-list %>
+    </ul>
+</body>
+
+</html>

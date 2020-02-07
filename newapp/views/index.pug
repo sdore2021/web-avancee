@@ -1,0 +1,48 @@
+extends layout
+block content
+    h1= title
+    p Welcome to our test
+    // Wrapper
+    #wrapper
+        // STUDENT INFO
+        #studentInfo
+            h2 Student Info
+            p
+                strong Name:
+                | <span id='studentInfoName'></span>
+                br
+                strong Age:
+                | <span id='studentInfoAge'></span>
+                br
+                strong Gender:
+                | <span id='studentInfoGender'></span>
+                br
+                strong Location:
+                | <span id='studentInfoLocation'></span>
+        // /STUDNET INFO
+        // STUDENT LIST
+        h2 Student List
+        #studentList
+            table
+                thead
+                    th UserName
+                    th Email
+                    th Delete?
+                tbody
+        // /STUDENT LIST
+        // ADD STUDENT
+        h2 Add STUDENT
+        #addStudent
+            fieldset
+                input#inputStudentName(type='text', placeholder='Student Name')
+                input#inputStudentEmail(type='text', placeholder='Email')
+                br
+                input#inputStudentFullname(type='text', placeholder='Full Name')
+                input#inputUserAge(type='text', placeholder='Age')
+                br
+                input#inputStudentLocation(type='text', placeholder='Location')
+                input#inputStudentGender(type='text', placeholder='Gender')
+                br
+                button#btnAddStudent Add Student
+        // /ADD STUDENT
+    // /WRAPPER
